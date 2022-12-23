@@ -35,6 +35,7 @@ def index():
             db.session.commit()
         except:
             print("Error while adding to database")
+            print(name, text)
             print(p)
 
         return redirect(url_for('index'))
